@@ -100,7 +100,7 @@ console.log(obj.myChildObj.myCity); // pune
 obj.myFunc(); // Hello from myFunction
 obj.myFunc2(); // Hello from myFunc2 arrow function
 obj.myFunc3("Halllowwwwww"); // Hello from myFunc3 arrow function Halllowwwwww
-
+// csfdsdfs
 
 // Ways to declare a variable in JavaScript
 // 1. var
