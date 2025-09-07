@@ -1,2 +1,2 @@
-let name="mayuri zope is a bokad";
+let name="fskd";
 console.log(name);

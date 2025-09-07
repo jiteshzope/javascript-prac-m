@@ -100,13 +100,3 @@ console.log(obj.myChildObj.myCity); // pune
 obj.myFunc(); // Hello from myFunction
 obj.myFunc2(); // Hello from myFunc2 arrow function
 obj.myFunc3("Halllowwwwww"); // Hello from myFunc3 arrow function Halllowwwwww
-// csfdsdfs
-
-// Ways to declare a variable in JavaScript
-// 1. var
-// 2. let
-// 3. const
-
-// var is used to declare a variable which has global scope or function scope
-// we can re-declare and re-assign the value of var variable
-var myVar = 10;
