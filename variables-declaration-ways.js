@@ -79,19 +79,67 @@
 // console.log('outside : ',b);
 
 
-var c = 400;
+// var c = 400; // global scope
 
-function hello(){
-    var c = 300;
-    function inner(){
-        // var c = 500;
-        console.log('inner : ',c);
-    } 
-    var c = 100; // function scope
-    inner();
-    // var c = 200; // here the variable declaration of c is moved to the top of the current scope but the assignment remains in the same place, and this conept is called as "hoisting" in JavaScript
-}
+// function hello(){
+    
+//     // var c = 300;
+//     function inner(){
+//         // var c = 500;
+//         console.log('inner : ',c);
+        
+//         // if(4 < 6){
+//         //     var c = 600;
+//         // }
+//     } 
+//     // console.log('hello : ',c);
+//     var c = 100; // function scope
+//     inner();
+//     // var c = 200; // here the variable declaration of c is moved to the top of the current scope but the assignment remains in the same place, and this conept is called as "hoisting" in JavaScript
+// }
 
-hello();
-console.log('outside : ',c);
+// hello(); // global scope
+// console.log('outside : ',c);
+
+// Hoisting in JavaScript : It is a default behavior of moving all the declarations to the top of the current scope (it happens in global scope as well as in function scope)
+// It is only applicable for var keyword
+// It is not applicable for let and const keywords
+
+
+// var c; // declaration ... and it is moved to the top of the current scope
+// c = 400; // assignment ... it remains in the same place
+
+// var c = 400; // declaration + assignment
+
+// let is used to declare a variable which has block scope and global scope
+// we can re-assign the value of let variable but we cannot re-declare the let variable
+
+// Each { } creates a new block scope
+
+// let a = 10; // global scope
+
+// function letTest(){
+//     // let a = 100; // block scope
+//     if(true){
+//         var a = 200; // block scope
+//         // console.log(a);
+//     }
+
+//     // function inner(){
+//     //     var a = 300; // block scope
+//     //     // console.log(a); // 300
+//     // }
+//     // inner();
+//     console.log(a); // 100
+// }
+// letTest();
+// console.log(a); // 10
+
+// const is used to declare a variable which has block scope and global scope
+// we cannot re-assign and re-declare the const variable
+// we have to initialize the const variable at the time of declaration
+
+// const a = 10; // global scope
+// a = 20; // re-assignment not allowed ... error
+// const a = 30; // re-declaration not allowed ... error
 
