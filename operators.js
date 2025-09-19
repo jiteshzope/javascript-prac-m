@@ -183,3 +183,16 @@
 // console.log(!NaN); // !false // true
 // console.log(![]); // !true // false
 // console.log(!{}); // !true // false);
+
+// increment and decrement operators
+// let a = 10;
+// console.log(a); // 10
+// console.log(a++); // 10 (..pehle use karo badme badhao...post increment operator... use/print it first and then increment the value by 1)
+// console.log(a); // 11
+// console.log(++a); // 12 (..pehle badhao baadme use karo... pre increment operator... increment the value by 1 first and then use it/print it)
+// console.log(a); // 12
+
+// console.log(a--); // 12 (..pehle use karo badme ghatado...post decrement operator... use/print it first and then decrement the value by 1)
+// console.log(a); // 11
+// console.log(--a); // 10 (..pehle ghatado baadme use karo... pre decrement operator... decrement the value by 1 first and then use it/print it)
+// console.log(a); // 10
