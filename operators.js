@@ -196,3 +196,39 @@
 // console.log(a); // 11
 // console.log(--a); // 10 (..pehle ghatado baadme use karo... pre decrement operator... decrement the value by 1 first and then use it/print it)
 // console.log(a); // 10
+
+
+// Nullish coalescing operator (??) .. only available in es2020 which is newer javascript version
+// It returns the right operand when the left operand is null or undefined(falsy) else it returns the left operand
+// let a = null;
+// console.log(a ?? 5); // 5
+// a = undefined;
+// console.log(a ?? 5); // 5
+// a = 2;
+// console.log(a ?? 5); // 2
+
+// ternary operator .... condition ? expression1 : expression2
+// if condition is truthy then expression1 is evaluated else expression2 is evaluated
+// let age = 18;
+// let canVote = (age >= 18) ? 'yes' : 'no'; // if age is greater than or equal to 18 then canVote is 'yes' else canVote is 'no'
+// console.log(canVote); // yes
+// let a = 7;
+// let b = a > 8 ? (a < 15 ? 'hello' : 'hi') : (a > 15 ? 'haalo' : 'naalo'); // nested ternary operator
+// console.log(b); // naalo
+// let a = 10;
+// let b = a > 8 ? (a < 15 ? 'hello' : 'hi') : (a > 15 ? 'haalo' : 'naalo'); // nested ternary operator
+// console.log(b); // hello
+
+
+// If variable is truthy then !!variable is true and if variable is falsy then !!variable is false
+// let a = 12;
+// console.log(!a); // false (!true is false)
+// console.log(!!a); // true (first !a is false and then !false is true)
+// a = 0;
+// console.log(!!a); // false (first !a is true and then !true is false)
+// a = '';
+// console.log(!!a); // false (first !a is true and then !true is false)
+// a = 'hello';
+// console.log(!!a); // true (first !a is false and then !false is true)
+// a = null;
+// console.log(!!a); // false (first !a is true and then !true is false)
